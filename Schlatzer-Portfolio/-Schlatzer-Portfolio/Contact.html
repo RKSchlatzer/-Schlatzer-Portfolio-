@@ -10,42 +10,51 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <script src="./JavaScript/Javascript.js" charset="utf-8"></script>
+
 </head>
 
 <body>
     <h1 class="header"><strong><p>Contact Me</p></strong></h1>
-
     <nav class="navbar" <ul>
         <li class='nav'><a href="index.html">Home</a></li>
         <li class='nav'><a href="About.html">About</a></li>
         <li class='nav_active'><a class="active" href="Resume.html">Resume</a></li>
-
         </ul>
     </nav>
-
-    <body>
+    <body onload="onload();">
         <br>
-        <p class="content">Here is where you can Contact Me via my awesome HTML5 Form. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.</p>
-        <div class="ContactFormBox">
-            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                <div class="row">
-                    <label for="name">Your Name:</label><br />
-                    <input id="name" class="input" name="name" placeholder="First & Last Name" type="text" value="" size="30" /><br />
-                </div>
-                <div class="row">
-                    <label for="email">Your email:</label><br />
-                    <input id="email" class="input" name="email" placeholder="Example@gmail.com" type="text" value="" size="30" /><br />
-                </div>
-                <div class="row">
-                    <label for="message">Your message:</label><br />
-                    <textarea id="message" class="input" name="message" placeholder="I'd love to hear from you!" rows="7" cols="30"></textarea><br />
-                </div>
-                <input id="submit_button" type="submit" value="Send email" />
-            </form>
+        <p class="content">Here is where you can contact me via my awesome HTML5 Form as well as test my JavaScript capabilities. <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="ContentBox">
+            <div class="Columns" id="ContactFormBox">
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <label for="name">Your Name:</label><br/>
+                        <input id="name" class="input" name="name" placeholder="First & Last Name" type="text" value="" size="30" /><br/>
+                    </div>
+                    <div class="row">
+                        <label for="email">Your email:</label><br/>
+                        <input id="email" class="input" name="email" placeholder="Example@gmail.com" type="text" value="" size="30" /><br/>
+                    </div>
+                    <div class="row">
+                        <label for="message">Your message:</label><br/>
+                        <textarea id="message" class="input" name="message" placeholder="I'd love to hear from you!" rows="7" cols="30"></textarea><br/>
+                    </div>
+                    <input id="submit_button" type="submit" value="Send email">
+                </form>
+            </div>
+            <!--JavaScript Testing Content Below Here -->
+            <div class="Columns" id="JavascriptBox">
+                <p>Here is a Javascript field/button combo for testing functions. <br><br>If you input text into the box below and click the button, the text should display in <em>Itallics</em> and be <span id="blue">blue</span><br><br>You should also see
+                    a big <br><strong>"Thanks for Clicking!"</strong> below the output.</p>
+                <input type="text" name="Form Input" placeholder="Type Something Here, Results Below" rows="7" cols="60" id="TextInput"><br><br>
+                <button onclick="Clicky(); ChangeUp();">Click Me!</button><br>
+                <input type="text" type="hidden" id="TextOutput"> <br>
+                <h1 id="ClickReturnText"><strong></strong></h1>
+            </div>
         </div>
-
         <!-- CSS-enable Images w/Text via DIVs not HTML table -->
         <div id="ImageText">
             <div class="NavBox">
@@ -66,9 +75,5 @@
                 </div>
             </div>
         </div>
-
-
-
     </body>
-
 </html>

@@ -49,7 +49,6 @@ body {
 .navbar {
     margin-top: 25px;
     text-align: center;
-    font-family: 'Montserrat', Arial, serif;
     width: 100%;
     display: inline-block;
     float: left;
@@ -78,8 +77,6 @@ body {
     background-color: tomato;
     border-radius: 2px 10px 2px;
     text-decoration: none;
-
-
 }
 
 
@@ -95,7 +92,6 @@ body {
     text-align: center;
     background: none;
     float: none;
-
 }
 
 .NavBox {
@@ -114,9 +110,6 @@ body {
     font-style: italic;
     font-family: "Montserrat", sans-serif;
     padding-top: 15px;
-
-
-
 }
 
 .NavBox img {
@@ -136,7 +129,6 @@ body {
 
 /* End of Image/Text Navigaton 'Div Box' */
 
-
 #Quote {
     text-align: center;
     font-style: italic;
@@ -154,18 +146,6 @@ body {
     background: #0c0 url(image) 0 0 no-repeat;
 }
 
-.ContactFormBox {
-    color: black;
-    width: 100%;
-    height: 10% float: left;
-    padding-top: 25px;
-    padding-bottom: 15px;
-    text-align: center;
-    font-family: 'Ultra', sans-serif;
-    letter-spacing: 3px;
-    font-size: 90%;
-}
-
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -175,7 +155,7 @@ body {
     line-height: 150%;
 }
 
-#resumecontent{
+#resumecontent {
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -195,4 +175,75 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background: #f44c0e;
+}
+
+.ContentBox {
+    text-align: center;
+    vertical-align: top;
+}
+
+.Columns {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+#ContactFormBox {
+    color: black;
+    width: 42%;
+    height: 400px;
+    margin: 2em;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Domine', sans-serif;
+    line-height: 200%;
+    letter-spacing: 3px;
+    font-size: 90%;
+    border: 8px;
+    border-style: solid;
+    border-color: tomato;
+    border-radius: 1em;
+}
+
+strong{ font-weight: bold;
+}
+
+#JavascriptBox {
+    width: 42%;
+    height: 400px;
+    margin: 2em;
+    font-family: 'Domine', sans-serif;
+    padding: 35px 25px 50px 25px;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    border: 8px;
+    border-style: solid;
+    border-color: tomato;
+    border-radius: 1em;
+}
+
+input {
+  width: 50%;
+  height: 20%;
+  font-family: 'Times New Roman', serif;
+  text-align: left;
+  border: 1px solid #500;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left;
+
+}
+
+#TextOutput {
+  font-size: 200%;
+  font-style: italic;
+  border: none;
+  text-align: center;
+  color: blue;
+  
+}
+
+#blue {
+  color: blue;
 }
